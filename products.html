@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Nautical</title>
+</head>
+<body>
+
+  <header class = "section-navbar">
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+        <p>Free shipping, 30-days return or refund guarante ✨</p>
+      </div>
+      <div class="sing_in_up">
+        <a href=#>SIGN IN</a>
+        <a href=#>SIGN UP</a>
+      </div>
+    </div>
+    </section>
+
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img
+          src="./images/Logo_1.3.jpg"
+          alt="Nautical logo"
+          class="logo"
+          width= "80%"
+          height="auto"
+          style="border-radius: 7%;">
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html " class="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+              <i class="fa-solid fa-cart-shopping"> 0 </i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Start Extra production section -->
+  <section class="section-extra-product">
+    <div class="container grid grid-three-cols">
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./images/fifty_per_off.jpg" alt="fifty percent off">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>Get 40% off on Jackets</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./images/jackets.jpg" alt="fourty percent off">
+        </div>
+      </div>
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>Get 20% off on Sneakers</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./images/shoes.jpg" alt="20% off on Sneakers">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Extra production sction -->
+
+  <!-- Start Policy -->
+  <section class="section-policy">
+    <div class="container grid grid-four--cols">
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>India-wide shipping</p>
+          <p>order above ₹1499</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>Easy 30 Day Returns</p>
+          <p>Back Returns in 7 Days</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>Money Back Gaurantee</p>
+          <p>Gaurantee with in 30 Days</p>
+        </div>
+      </div>
+
+      <div class="div-policy">
+        <div class="icons">
+          <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div class="div-policy-text">
+          <p>Easy Online Support</p>
+          <p>24x7</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- End Policy -->
+
+  <!--Start Checkout More-->
+
+  <section class="section-products container">
+    <div class="">
+      <h2 class="section-common--heading">Checkout Store</h2>
+    </div>
+
+    <section class="container">
+      <div id="productContainer"></div>
+    </section>
+  </section>
+
+  <!--End Checkout More-->
+
+    <!--Start Product Templates-->
+
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="">
+          </div>
+          <h2 class="productName"></h2>
+
+          <p class="productDescription"></p>
+
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity</p>
+            <div class="stockElement">
+              <button class="cartIncremet">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+          </button>
+        </article>
+      </div>
+    </template>
+
+    <!--End Product Templates-->
+
+  <!-- Start Footer -->
+   <footer class="section-footer">
+    <script src="footer.js"></script>
+   </footer>
+  <!-- End Footer -->
+
+  <script type="module" src="main.js"></script>
+
+
+  
+</body>
+</html>
